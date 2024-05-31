@@ -1,0 +1,61 @@
+<sukiUi:SukiWindow 
+    xmlns="https://github.com/avaloniaui"
+    xmlns:sukiUi="clr-namespace:SukiUI.Controls;assembly=SukiUI"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:GHWLauncher.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+    x:Class="GHWLauncher.Views.MainWindow"
+    x:DataType="vm:MainWindowViewModel"
+    Icon="/Assets/avalonia-logo.ico"
+    Title="GHWLauncher">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <sukiUi:SukiSideMenu>
+        <sukiUi:SukiSideMenu.Items>
+            <sukiUi:SukiSideMenuItem Header="Statistics">
+                <sukiUi:SukiSideMenuItem.PageContent>
+                    <TransitioningContentControl Margin="5 5 0 0" Content="{Binding GiPageViewModel}"/>
+                </sukiUi:SukiSideMenuItem.PageContent>
+            </sukiUi:SukiSideMenuItem>
+            <sukiUi:SukiSideMenuItem Header="Gamers">
+                <sukiUi:SukiSideMenuItem.PageContent>
+                    <TextBlock>lorem ipsum</TextBlock>
+                </sukiUi:SukiSideMenuItem.PageContent>
+            </sukiUi:SukiSideMenuItem>
+        </sukiUi:SukiSideMenu.Items>
+    </sukiUi:SukiSideMenu>
+    <!-- <SplitView IsPaneOpen="True"
+               OpenPaneLength="200"
+               CompactPaneLength="80"
+               DisplayMode="CompactInline">
+        <SplitView.Pane>
+            <StackPanel Spacing="5" Margin="5">
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <Button Width="18" Height="24"
+                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                            Background="#1e1e1e"
+                            Foreground="White">
+                    </Button>
+                    <TextBlock VerticalAlignment="Center">
+                        MENU
+                    </TextBlock>
+                </StackPanel>
+                <ListBox Foreground="White">
+                    <ListBoxItem>ITEM</ListBoxItem>
+                    <ListBoxItem>ITEM</ListBoxItem>
+                    <ListBoxItem>ITEM</ListBoxItem>
+                </ListBox>
+            </StackPanel>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <TextBlock>CONTENT</TextBlock>
+        </SplitView.Content>
+    </SplitView>-->
+</sukiUi:SukiWindow>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="GHWLauncher/App.axaml" value="GHWLauncher/GHWLauncher.csproj" />
+        <entry key="GHWLauncher/Views/GiPageView.axaml" value="GHWLauncher/GHWLauncher.csproj" />
+        <entry key="GHWLauncher/Views/MainWindow.axaml" value="GHWLauncher/GHWLauncher.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
