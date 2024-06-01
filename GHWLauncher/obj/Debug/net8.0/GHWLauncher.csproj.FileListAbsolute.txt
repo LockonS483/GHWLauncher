@@ -70,3 +70,11 @@
 /Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/obj/Debug/net8.0/GHWLauncher.genruntimeconfig.cache
 /Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/obj/Debug/net8.0/ref/GHWLauncher.dll
 /Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/bin/Debug/net8.0/CommunityToolkit.Mvvm.dll
+/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/obj/Debug/net8.0/GHWLauncher.sourcelink.json
+/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/bin/Debug/net8.0/Avalonia.Labs.Controls.dll

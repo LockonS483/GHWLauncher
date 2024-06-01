@@ -1,18 +1,50 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:sukiUi="clr-namespace:SukiUI.Controls;assembly=SukiUI"
+             xmlns:labs="clr-namespace:Avalonia.Labs.Controls;assembly=Avalonia.Labs.Controls"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:vm="using:GHWLauncher.ViewModels"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:GHWLauncher.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="GHWLauncher.Views.GiPageView">
+             x:Class="GHWLauncher.Views.GiPageView"
+             x:DataType="viewModels:GiPageViewModel">
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:GiPageViewModel/>
     </Design.DataContext>
     
-    <sukiUi:GlassCard VerticalAlignment="Stretch" CornerRadius="12 0 0 0">
-        <TextBlock>GEN</TextBlock>
-    </sukiUi:GlassCard>
+    <StackPanel>
+        <StackPanel.Background>
+            <ImageBrush Source="/Assets/GiImage.png" Stretch="UniformToFill" Opacity="0.8"/>
+        </StackPanel.Background>
+        <Grid ShowGridLines="False">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="150"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="480"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <labs:FlipView Grid.Column="1" Grid.Row="1" 
+                           Name="FlipViewBanner"
+                           CornerRadius="8"
+                           Width="480"
+                           Height="300"
+                           Background="Aqua">
+                <labs:FlipView.ItemTemplate>
+                    
+                </labs:FlipView.ItemTemplate>
+            </labs:FlipView>
+            <sukiUi:GlassCard Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                              Width="480" Height="120">
+                
+            </sukiUi:GlassCard>
+        </Grid>
+    </StackPanel>
 </UserControl>

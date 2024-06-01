@@ -3,13 +3,22 @@
              x:Class="GHWLauncher.App"
              xmlns:sukiUi="clr-namespace:SukiUI;assembly=SukiUI"
              xmlns:local="using:GHWLauncher"
+             xmlns:labs="using:Avalonia.Labs.Controls"
              RequestedThemeVariant="Dark">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
+             
+    <Application.Resources>
+        <SolidColorBrush x:Key="SystemControlBackgroundChromeWhiteBrush">Transparent</SolidColorBrush>
+        <SolidColorBrush x:Key="SystemControlBackgroundBaseLowBrush">Transparent</SolidColorBrush>
+        <SolidColorBrush x:Key="SystemControlForegroundTransparentBrush">Transparent</SolidColorBrush>
+    </Application.Resources>
+
   
      <Application.Styles>
          <sukiUi:SukiTheme ThemeColor="Blue"  />
+         <labs:ControlThemes />
      </Application.Styles>
 </Application>

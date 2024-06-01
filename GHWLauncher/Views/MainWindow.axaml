@@ -19,12 +19,12 @@
     
     <sukiUi:SukiSideMenu>
         <sukiUi:SukiSideMenu.Items>
-            <sukiUi:SukiSideMenuItem Header="Statistics">
+            <sukiUi:SukiSideMenuItem Header="Genshin Impact">
                 <sukiUi:SukiSideMenuItem.PageContent>
-                    <TransitioningContentControl Margin="5 5 0 0" Content="{Binding GiPageViewModel}"/>
+                    <TransitioningContentControl Margin="0" Content="{Binding GiPageViewModel}"/>
                 </sukiUi:SukiSideMenuItem.PageContent>
             </sukiUi:SukiSideMenuItem>
-            <sukiUi:SukiSideMenuItem Header="Gamers">
+            <sukiUi:SukiSideMenuItem Header="Honkai Star Rail">
                 <sukiUi:SukiSideMenuItem.PageContent>
                     <TextBlock>lorem ipsum</TextBlock>
                 </sukiUi:SukiSideMenuItem.PageContent>
