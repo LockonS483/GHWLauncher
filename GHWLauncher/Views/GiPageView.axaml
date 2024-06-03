@@ -6,6 +6,7 @@
              xmlns:vm="using:GHWLauncher.ViewModels"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModels="clr-namespace:GHWLauncher.ViewModels"
+             xmlns:asyncImageLoader="clr-namespace:AsyncImageLoader;assembly=AsyncImageLoader.Avalonia"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="GHWLauncher.Views.GiPageView"
              x:DataType="viewModels:GiPageViewModel">
@@ -17,33 +18,30 @@
     
     <StackPanel>
         <StackPanel.Background>
-            <ImageBrush Source="/Assets/GiImage.png" Stretch="UniformToFill" Opacity="0.8"/>
+            <ImageBrush asyncImageLoader:ImageBrushLoader.Source="{Binding GiImageLink}" Stretch="UniformToFill" Opacity="1"/>
         </StackPanel.Background>
         <Grid ShowGridLines="False">
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="25"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="150"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"></ColumnDefinition>
-                <ColumnDefinition Width="480"></ColumnDefinition>
+                <ColumnDefinition Width="25"></ColumnDefinition>
+                <ColumnDefinition Width="524"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <labs:FlipView Grid.Column="1" Grid.Row="1" 
                            Name="FlipViewBanner"
                            CornerRadius="8"
-                           Width="480"
-                           Height="300"
+                           Width="524"
+                           Height="320"
                            Background="Aqua">
-                <labs:FlipView.ItemTemplate>
-                    
-                </labs:FlipView.ItemTemplate>
             </labs:FlipView>
-            <sukiUi:GlassCard Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom"
-                              Width="480" Height="120">
-                
+            <sukiUi:GlassCard Margin="10 10 10 10" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top"
+                              Width="524" Height="120">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"> Some Stuff Here </TextBlock>
             </sukiUi:GlassCard>
         </Grid>
     </StackPanel>

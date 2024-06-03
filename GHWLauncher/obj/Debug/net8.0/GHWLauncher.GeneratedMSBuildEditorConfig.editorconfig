@@ -15,15 +15,15 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GHWLauncher
-build_property.ProjectDir = /Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/
+build_property.ProjectDir = C:\Users\Rumbl\RiderProjects\GHWLauncher\GHWLauncher\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/App.axaml]
+[C:/Users/Rumbl/RiderProjects/GHWLauncher/GHWLauncher/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/Views/GiPageView.axaml]
+[C:/Users/Rumbl/RiderProjects/GHWLauncher/GHWLauncher/Views/GiPageView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/lockons/RiderProjects/GHWLauncher/GHWLauncher/Views/MainWindow.axaml]
+[C:/Users/Rumbl/RiderProjects/GHWLauncher/GHWLauncher/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -6,9 +6,9 @@ using GHWLauncher.Helpers;
 
 namespace GHWLauncher.ViewModels;
 
-
 public partial class GiPageViewModel : ViewModelBase
 {
-    //public Bitmap? GiBackImage { get; } = ImageHelper.LoadFromResource(new Uri("avares://GHWLaucher/Assets/abstract.jpg"));
-    public Task<Bitmap?> GiBackImage { get; } = ImageHelper.LoadFromWeb(new Uri("https://upload.wikimedia.org/wikipedia/commons/4/41/NewtonsPrincipia.jpg"));
+    //public Bitmap? GiBackImage { get; } = ImageHelper.LoadFromResource(new Uri("avares://GHWLauncher/Assets/GiImage.jpg"));
+    [ObservableProperty]
+    private string _giImageLink = "https://launcher-webstatic.mihoyo.com/launcher-public/2024/04/23/209ab910dba69ea54d89a31e10bf82d6_4983283784718022512.png";
 }

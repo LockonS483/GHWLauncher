@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "GHWLauncher/1.0.0": {
         "dependencies": {
+          "AsyncImageLoader.Avalonia": "3.2.1",
           "Avalonia": "11.1.0-beta2",
           "Avalonia.Desktop": "11.1.0-beta2",
           "Avalonia.Diagnostics": "11.1.0-beta2",
@@ -21,6 +22,17 @@
         },
         "runtime": {
           "GHWLauncher.dll": {}
+        }
+      },
+      "AsyncImageLoader.Avalonia/3.2.1": {
+        "dependencies": {
+          "Avalonia": "11.1.0-beta2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AsyncImageLoader.Avalonia.dll": {
+            "assemblyVersion": "3.2.1.0",
+            "fileVersion": "3.2.1.0"
+          }
         }
       },
       "Avalonia/11.1.0-beta2": {
@@ -77,17 +89,17 @@
           "runtimes/win-arm64/native/av_libglesv2.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "2.1.22045.0"
           },
           "runtimes/win-x64/native/av_libglesv2.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "2.1.22045.0"
           },
           "runtimes/win-x86/native/av_libglesv2.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "2.1.22045.0"
           }
         }
       },
@@ -970,6 +982,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AsyncImageLoader.Avalonia/3.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m5q7mbGZ2s3gqQPYmzGQ4YjT/+CWAP1xHxWxuSSqbwdTVAZk86HYCHvrTCR6TxeXvkWafvTMuwJamooeEfeQQw==",
+      "path": "asyncimageloader.avalonia/3.2.1",
+      "hashPath": "asyncimageloader.avalonia.3.2.1.nupkg.sha512"
     },
     "Avalonia/11.1.0-beta2": {
       "type": "package",
