@@ -7,7 +7,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:viewModels="clr-namespace:GHWLauncher.ViewModels"
              xmlns:asyncImageLoader="clr-namespace:AsyncImageLoader;assembly=AsyncImageLoader.Avalonia"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="730"
              x:Class="GHWLauncher.Views.GiPageView"
              x:DataType="viewModels:GiPageViewModel">
     <Design.DataContext>
@@ -20,28 +20,28 @@
         <StackPanel.Background>
             <ImageBrush asyncImageLoader:ImageBrushLoader.Source="{Binding GiImageLink}" Stretch="UniformToFill" Opacity="1"/>
         </StackPanel.Background>
-        <Grid ShowGridLines="False">
+        <Grid ShowGridLines="True">
             <Grid.RowDefinitions>
-                <RowDefinition Height="25"></RowDefinition>
-                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="190"></RowDefinition>
+                <RowDefinition Height="260"></RowDefinition>
                 <RowDefinition Height="150"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="25"></ColumnDefinition>
-                <ColumnDefinition Width="524"></ColumnDefinition>
+                <ColumnDefinition Width="384"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <labs:FlipView Grid.Column="1" Grid.Row="1" 
                            Name="FlipViewBanner"
                            CornerRadius="8"
-                           Width="524"
-                           Height="320"
+                           Width="384"
+                           Height="260"
                            Background="Aqua">
             </labs:FlipView>
             <sukiUi:GlassCard Margin="10 10 10 10" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top"
-                              Width="524" Height="120">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"> Some Stuff Here </TextBlock>
+                              Width="384" Height="100">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Text="{Binding Gib}"> </TextBlock>
             </sukiUi:GlassCard>
         </Grid>
     </StackPanel>
