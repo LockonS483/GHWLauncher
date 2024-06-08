@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GHWLauncher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81d4acb64d8b4e1b31c6aaf31e299b6a622e485b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18686a9d6fa088886bfc7f7ca3dc2ef44bfdbbbb")]
 [assembly: System.Reflection.AssemblyProductAttribute("GHWLauncher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GHWLauncher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

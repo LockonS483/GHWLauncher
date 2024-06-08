@@ -31,10 +31,9 @@ public class LauncherContentService
         return responseData.Data;
     }
 
-    private LauncherContent GetGameRequestAsync(GameBiz biz)
-    {
-        /*
-        var url = biz switch
+    private string GetApiUrl(GameBiz biz)
+    { 
+        /*var url = biz switch
         {
            GameBiz.hk4e_cn => "https://sdk-static.mihoyo.com/hk4e_cn/mdk/launcher/api/resource?channel_id=1&key=eYd89JmJ&launcher_id=18&sub_channel_id=1",
            GameBiz.hk4e_global => $"https://sdk-os-static.mihoyo.com/hk4e_global/mdk/launcher/api/resource?channel_id=1&key=gcStgarh&launcher_id=10&sub_channel_id=0",
@@ -51,9 +50,14 @@ public class LauncherContentService
            GameBiz.nap_cn => "https://nap-launcher-static.mihoyo.com/nap_cn/mdk/launcher/api/resource?channel_id=1&key=9HEb62Pw0qKYX4Mw&launcher_id=15&sub_channel_id=1",
            //GameBiz.nap_global => "",
            _ => throw new ArgumentOutOfRangeException($"Unknown region {biz}"),
-        };
-         */
+        };*/
         var url = "https://sdk-static.mihoyo.com/hk4e_cn/mdk/launcher/api/content?filter_adv=false&key=eYd89JmJ&language=zh-cn&launcher_id=18";
+        return url;
+    }
+    private LauncherContent GetGameRequestAsync(GameBiz biz)
+    {
+        //var url = "https://sdk-static.mihoyo.com/hk4e_cn/mdk/launcher/api/content?filter_adv=false&key=eYd89JmJ&language=zh-cn&launcher_id=18";
+        var url = GetApiUrl(biz);
         var request = new HttpRequestMessage(HttpMethod.Get, url);
         _lContent = CommonSendAsync<LauncherContent>(request).Result;
         return _lContent;

@@ -24,6 +24,6 @@ public partial class GiPageViewModel : ViewModelBase
 
     void UpdateBgImage()
     {
-        GiImageLink = _launcherContentService.GetBgImage(GameBiz.hk4e_bilibili);
+        GiImageLink = _launcherContentService.GetBgImage(GameBiz.hk4e_cn);
     }
 }
